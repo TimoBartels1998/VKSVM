@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.ostfalia.svm.trafficSign.FXController">
+   <bottom>
+   	  <VBox alignment="center">
+   	  	  <Button fx:id="button" alignment="center" onAction="#startCamera" text="Start Camera" />
+   	  	  <HBox alignment="center">
+	         <padding>
+	            <Insets bottom="25" left="25" right="25" top="25" />
+	         </padding>
+	         <ImageView fx:id="currentFrameColorMask" />
+	         <ImageView fx:id="currentAnalyzedFrame" />
+	      </HBox>
+	      <HBox alignment="center">
+	         <padding>
+	            <Insets bottom="25" left="25" right="25" top="25" />
+	         </padding>
+	         <ImageView fx:id="currentClassifiedFrame" />
+	         <ImageView fx:id="currentFrame" />
+	      </HBox>
+      </VBox>
+   </bottom>
+</BorderPane> 
